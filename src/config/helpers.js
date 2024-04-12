@@ -1,7 +1,14 @@
 export const downloadCanvasToImage = () => {
   const canvas = document.querySelector("canvas");
+  console.log(canvas)
   const dataURL = canvas.toDataURL();
   const link = document.createElement("a");
+
+  /* var data = canvas.toDataURL();
+  var prev = window.location.href;
+  window.location.href = data.replace("image/png", "image/octet-stream");
+  window.location.href = prev; */
+
 
   link.href = dataURL;
   link.download = "canvas.png";

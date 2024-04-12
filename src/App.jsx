@@ -7,7 +7,7 @@ function App() {
 
   return (
     
-    <main className="app transition-all ease-in bg-slate-400">
+    <main className="app transition-all ease-in">
       <Home/>
       <Canvas/>
       <Customizer/>

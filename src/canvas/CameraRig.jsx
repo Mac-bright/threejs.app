@@ -20,8 +20,8 @@ useFrame((state,delta) => {
   
 let targetPosition = [-0.4,0,2]
 if(snap.intro){
-  if(isBreakPoint) targetPosition = [0,0,1]
-  if(isMobile) targetPosition = [0,0.2,2]
+  if(isBreakPoint) targetPosition = [0,0,2]
+  if(isMobile) targetPosition = [0,0.1,2]
 }else{
   if(isMobile) targetPosition = [0,0,2.5]
   else targetPosition = [0,0,1.5];

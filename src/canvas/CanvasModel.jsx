@@ -17,12 +17,12 @@ const CanvasModel = () => {
       shadows
       camera={{position:[0,0,0],fov:35}}
       gl={{preventDrawingBuffer:true}}
-      className='w-full max-w-full h-full transition-all ease-in'
+      className='w-full max-w-full h-full transition-all ease-in canvas'
     >
       <ambientLight intensity={3}/>
      
       <CameraRig>
-        {/* <Backdrop/> */}
+        <Backdrop/>
         <Center>
           <Shirt/>
         </Center>
